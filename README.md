@@ -27,6 +27,7 @@ The meditation app offers a welcoming experience with easy browsing of meditatio
 - npx expo install react-native-reanimated
 - npx expo install react-native-safe-area-context
 - npx pod-install
+-
 
 ## File Structure
 
