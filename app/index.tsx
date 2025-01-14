@@ -1,7 +1,8 @@
 import { View, Text, ImageBackground, Image } from "react-native";
 import React from "react";
 
-const beachImage = require("../assets/meditation-images/beach.webp");
+//const beachImage = require("../assets/meditation-images/beach.webp");
+import beachImage from "@/assets/meditation-images/beach.webp";
 
 const App = () => {
   return (
