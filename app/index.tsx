@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, ImageBackground, SafeAreaView } from "react-native";
+import {
+  View,
+  Text,
+  ImageBackground,
+  SafeAreaView,
+  TouchableOpacity,
+} from "react-native";
 import { useRouter } from "expo-router";
 //import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
@@ -37,6 +43,15 @@ const App = () => {
             title="Get Started"
             onPress={() => router.push("/nature-meditate")}
           />
+
+          {/* <TouchableOpacity
+            activeOpacity={0.7}
+            className={`rounded-xl bg-white min-h-[62px] justify-center items-center $`}
+            onPress={() => console.log("Embedded button pushed")}
+          >
+            <Text className={`font-bold text-2xl `}>Button</Text>
+          </TouchableOpacity> */}
+
           <StatusBar style="light" />
         </SafeAreaView>
         {/* </LinearGradient> */}
