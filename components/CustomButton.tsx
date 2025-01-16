@@ -17,7 +17,7 @@ const CustomButton = ({
   return (
     <TouchableOpacity
       activeOpacity={0.7}
-      className={`bg-white rounded-xl min-h-[62px] justify-center items-center ${containerStyles} `}
+      className={`rounded-xl bg-white min-h-[62px] justify-center items-center ${containerStyles} `}
       onPress={onPress}
     >
       <Text className={`font-bold text-2xl ${textStyles}`}>Button</Text>
