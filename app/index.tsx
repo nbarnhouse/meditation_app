@@ -16,6 +16,7 @@ import { StatusBar } from "expo-status-bar";
 //ES Module Import
 import beachImage from "@/assets/meditation-images/beach.webp";
 import CustomButton from "@/components/CustomButton";
+//import AppGradient from "@/components/AppGradient";
 
 const App = () => {
   const router = useRouter();
@@ -26,10 +27,10 @@ const App = () => {
         resizeMode="cover"
         className="flex-1"
       >
-        {/* <LinearGradient
-          className="flex-1"
+        {/* <AppGradient
           colors={["rgba(0,0,0,0.4)", "rgba(0,0,0,0.8)"]}
-        > */}
+        ></AppGradient> */}
+
         <SafeAreaView className=" flex-1 mx-5 my-12 justify-between">
           <View>
             <Text className="text-white text-center text-4xl font-bold">
@@ -43,18 +44,8 @@ const App = () => {
             title="Get Started"
             onPress={() => router.push("/nature-meditate")}
           />
-
-          {/* <TouchableOpacity
-            activeOpacity={0.7}
-            className={`rounded-xl bg-white min-h-[62px] justify-center items-center $`}
-            onPress={() => console.log("Embedded button pushed")}
-          >
-            <Text className={`font-bold text-2xl `}>Button</Text>
-          </TouchableOpacity> */}
-
           <StatusBar style="light" />
         </SafeAreaView>
-        {/* </LinearGradient> */}
       </ImageBackground>
     </View>
   );
