@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+# Meditation App (Mobile)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Description
 
-## Get started
+The meditation app offers a welcoming experience with easy browsing of meditations, a built-in audio player, seamless navigation, and a design that works smoothly on all devices.
 
-1. Install dependencies
+### Prerequisites
 
-   ```bash
-   npm install
-   ```
+- [npm](https://www.npmjs.com)
+- [Expo Go](https://expo.dev)
+- [Homebrew](https://brew.sh)
+- [NativeWind](https://www.nativewind.dev)
 
-2. Start the app
+## Installation (Development)
 
-   ```bash
-    npx expo start
-   ```
+1. Install Expo Go on your mobile device.
+2. Run `npx expo start` in your terminal
+3. Open App in Expo Go App, run on web, and/or run on ios/android simulators.
 
-In the output, you'll find options to open the app in a
+## Options if not already installed
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- brew install node
+- brew install watchman
+- npx expo install expo-linear-gradient
+- npx expo install nativewind
+- npx expo install tailwindcss
+- npx expo install react-native-reanimated
+- npx expo install react-native-safe-area-context
+- npx pod-install
+-
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## File Structure
 
-## Get a fresh project
+- `app/` contains the visual and navigation app files
+- `assets/` contains app images, icons, and other media
+- `components/` contains reusable code snippets of common elements
+- `constants/` contains app-wide constants
+- `android/` contains android specific app files
+- `ios/` contains ios specific app files
 
-When you're ready, run:
+## How to Use
 
-```bash
-npm run reset-project
-```
+The meditation app starts with a welcoming screen featuring a soothing gradient background to guide users as they begin. It offers a list of meditations with images for easy browsing, along with a player to listen to sessions and track the time remaining. Users can easily move between different sections, like meditations and affirmations, through simple navigation. The app is designed to work smoothly on all devices, providing a consistent and enjoyable experience. Its design focuses on being flexible and easy to maintain as new features are added.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Built With
 
-## Learn more
+- Javascript
+- React Native
+- Expo
+- NativeWind
+- Typescript
 
-To learn more about developing your project with Expo, look at the following resources:
+## Acknowledgement
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
 
-## Join the community
+## Support
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+If you have suggestions or issues, please email me at [nicolebarnhouse@gmail.com](mailto:nicolebarnhouse@gmail.com).
