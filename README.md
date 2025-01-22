@@ -22,12 +22,11 @@ The meditation app offers a welcoming experience with easy browsing of meditatio
 - brew install node
 - brew install watchman
 - npx expo install expo-linear-gradient
-- npx expo install nativewind
-- npx expo install tailwindcss
 - npx expo install react-native-reanimated
 - npx expo install react-native-safe-area-context
-- npx pod-install
--
+- npx expo install expo-av
+- npm install axios
+- npm install express pg cors body-parser
 
 ## File Structure
 
@@ -47,12 +46,12 @@ The meditation app starts with a welcoming screen featuring a soothing gradient 
 - Javascript
 - React Native
 - Expo
-- NativeWind
-- Typescript
+- PostgreSQL
+- Node.js
 
 ## Acknowledgement
 
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
+Thanks to [Prime Digital Academy](www.primeacademy.io) and @StevenCodeCraft who equipped and helped me to make this application a reality.
 
 ## Support
 

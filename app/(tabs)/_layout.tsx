@@ -3,6 +3,11 @@ import { Tabs } from "expo-router";
 import Colors from "../constants/Colors";
 import { MaterialCommunityIcons, Entypo } from "@expo/vector-icons";
 
+export const unstable_settings = {
+  // Ensure that reloading on `/modal` keeps a back button present.
+  initialRouteName: "(tabs)",
+};
+
 const TabsLayout = () => {
   return (
     <Tabs
