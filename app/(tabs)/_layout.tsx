@@ -38,6 +38,7 @@ const TabsLayout = () => {
           ),
         }}
       />
+      <Tabs.Screen name="flatListText" />
     </Tabs>
   );
 };
