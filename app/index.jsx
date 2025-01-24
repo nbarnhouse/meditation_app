@@ -5,6 +5,7 @@ import {
   ImageBackground,
   SafeAreaView,
   StyleSheet,
+  TouchableOpacity,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -33,6 +34,13 @@ export default function App() {
             </Text>
           </View>
 
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => router.push("/(modal)/TestModalFile")}
+          >
+            <Text style={{ fontWeight: "bold", fontSize: 20 }}>Open Modal</Text>
+          </TouchableOpacity>
+
           <CustomButton
             title="Get Started"
             onPress={() => router.push("/nature-meditate")}
@@ -58,5 +66,14 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     color: "white",
+  },
+
+  button: {
+    height: 62,
+    backgroundColor: "#FFFFFF",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 10,
+    width: "90%",
   },
 });
