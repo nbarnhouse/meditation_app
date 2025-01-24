@@ -27,6 +27,7 @@ The meditation app offers a welcoming experience with easy browsing of meditatio
 - npx expo install expo-av
 - npm install axios
 - npm install express pg cors body-parser
+- npm install expo-audio
 
 ## File Structure
 
