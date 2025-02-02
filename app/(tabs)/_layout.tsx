@@ -20,6 +20,7 @@ const TabsLayout = () => {
         name="nature-meditate"
         options={{
           tabBarLabel: "Meditate",
+
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="flower-tulip"
