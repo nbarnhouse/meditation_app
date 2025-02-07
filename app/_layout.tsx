@@ -1,8 +1,8 @@
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 
-SplashScreen.preventAutoHideAsync();
-setTimeout(SplashScreen.hideAsync, 5000);
+// SplashScreen.preventAutoHideAsync();
+// setTimeout(SplashScreen.hideAsync, 5000);
 
 export default function RootLayout() {
   return (
@@ -10,8 +10,16 @@ export default function RootLayout() {
       <Stack.Screen name="index" options={{ headerShown: false }} />;
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen
-        name="(modal)/TestModalFile"
+        name="(modal)/meditationAdjustDuration"
         options={{ headerShown: false, presentation: "modal" }}
+      />
+      <Stack.Screen
+        name="meditationTimeScreen"
+        options={{
+          headerTitle: "",
+          headerTransparent: true,
+          headerTintColor: "black",
+        }}
       />
     </Stack>
   );

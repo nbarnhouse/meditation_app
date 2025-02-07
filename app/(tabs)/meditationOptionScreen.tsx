@@ -12,8 +12,11 @@ import { StatusBar } from "expo-status-bar";
 
 import { MEDITATION_DATA } from "../constants/meditation-data";
 import meditationImages from "../constants/meditation-images";
+import { useRouter } from "expo-router";
 
-const NatureMeditate = () => {
+export default function MeditationOptionScreen() {
+  const router = useRouter();
+
   return (
     <View style={{ flex: 1, backgroundColor: "#7c618e" }}>
       <SafeAreaView style={styles.container}>
@@ -28,7 +31,7 @@ const NatureMeditate = () => {
           renderItem={({ item }) => (
             <Pressable
               style={styles.flatlist_item}
-              onPress={() => console.log("Pressed Item")}
+              onPress={() => router.push("/meditationTimeScreen")}
             >
               <ImageBackground
                 source={meditationImages[item.id - 1]}
@@ -44,9 +47,7 @@ const NatureMeditate = () => {
       </SafeAreaView>
     </View>
   );
-};
-
-export default NatureMeditate;
+}
 
 const styles = StyleSheet.create({
   container: {
