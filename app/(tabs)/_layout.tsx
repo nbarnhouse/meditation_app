@@ -17,7 +17,7 @@ const TabsLayout = () => {
       }}
     >
       <Tabs.Screen
-        name="nature-meditate"
+        name="meditationOptionScreen"
         options={{
           tabBarLabel: "Meditate",
 
@@ -31,7 +31,7 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="affirmations"
+        name="affirmationsOptionScreen"
         options={{
           tabBarLabel: "Affirmations",
           tabBarIcon: ({ color }) => (
@@ -39,7 +39,6 @@ const TabsLayout = () => {
           ),
         }}
       />
-      <Tabs.Screen name="flatListText" />
     </Tabs>
   );
 };

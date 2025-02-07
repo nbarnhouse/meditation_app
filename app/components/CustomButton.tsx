@@ -13,7 +13,7 @@ const CustomButton = ({ onPress, title }: CustomButtonProps) => {
       onPress={onPress}
       style={styles.button_style}
     >
-      <Text style={styles.text}>Get Started</Text>
+      <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>
   );
 };
