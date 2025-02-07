@@ -16,9 +16,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       }
+    },
+    "ios": {
+      "icon": "./assets/images/icon.png"
     },
     "web": {
       "bundler": "metro",
@@ -27,15 +30,14 @@
     },
     "plugins": [
       "expo-router",
-      // [
-      //   "expo-splash-screen",
-      //   {
-      //     "image": "./assets/simpleMeditationLogo.png",
-      //     "imageWidth": 200,
-      //     "resizeMode": "contain",
-      //     "backgroundColor": "red"
-      //   }
-      // ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain"
+        }
+      ],
       "expo-audio"
     ],
     "experiments": {
