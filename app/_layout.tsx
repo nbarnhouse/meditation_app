@@ -17,6 +17,7 @@ export default function RootLayout() {
         name="meditationTimeScreen"
         options={{
           headerTitle: "",
+          headerShown: false,
           headerTransparent: true,
           headerTintColor: "black",
         }}
