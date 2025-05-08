@@ -19,27 +19,21 @@ import CustomButton from "./components/CustomButton";
 export default function App() {
   const router = useRouter();
   return (
-    <View style={{ flex: 1 }}>
-      <ImageBackground
-        source={beachImage}
-        resizeMode="cover"
-        style={{ flex: 1 }}
-      >
-        <SafeAreaView style={styles.container}>
-          <View style={{ alignItems: "center" }}>
-            <Text style={styles.title}>Simple Meditation App</Text>
-            <Text style={styles.subtitle}>
-              Simplifying Meditation for Everyone
-            </Text>
-          </View>
-          <CustomButton
-            title="Get Started"
-            onPress={() => router.push("/meditationOptionScreen")}
-          />
-          <StatusBar style="light" />
-        </SafeAreaView>
-      </ImageBackground>
-    </View>
+    <ImageBackground source={beachImage} resizeMode="cover" style={{ flex: 1 }}>
+      <SafeAreaView style={styles.container}>
+        <View style={{ alignItems: "center" }}>
+          <Text style={styles.title}>Simple Meditation App</Text>
+          <Text style={styles.subtitle}>
+            Simplifying Meditation for Everyone
+          </Text>
+        </View>
+        <CustomButton
+          title="Get Started"
+          onPress={() => router.push("/meditationOptionScreen")}
+        />
+        <StatusBar style="light" />
+      </SafeAreaView>
+    </ImageBackground>
   );
 }
 
