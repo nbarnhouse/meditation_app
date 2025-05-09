@@ -1,6 +1,6 @@
 import { View, Text, SafeAreaView, StyleSheet } from "react-native";
 import React from "react";
-import CustomButton from "./components/CustomButton";
+import CustomButton from "../components/CustomButton";
 import { useRouter } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
 

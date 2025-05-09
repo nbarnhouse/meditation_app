@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 import React from "react";
-import AFFIRMATION_GALLERY from "../constants/affirmation-data";
-import GuidedAffirmationsGallery from "../components/GuidedAffirmationsGallery";
+import AFFIRMATION_GALLERY from "../../constants/affirmation-data";
+import GuidedAffirmationsGallery from "../../components/GuidedAffirmationsGallery";
 
 export default function AffirmationsOptionScreen() {
   return (

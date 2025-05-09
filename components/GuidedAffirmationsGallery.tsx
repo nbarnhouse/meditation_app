@@ -7,9 +7,9 @@ import {
   Image,
 } from "react-native";
 import React from "react";
-import { GalleryPreviewData } from "../constants/models/AffirmationCategory";
+import { GalleryPreviewData } from "../app/constants/models/AffirmationCategory";
 import { Link } from "expo-router";
-import images from "@/app/constants/affirmation-images";
+import images from "@/constants/affirmation-images";
 
 interface GuidedAffirmationsGalleryProps {
   title: string;

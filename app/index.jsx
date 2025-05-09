@@ -15,7 +15,7 @@ import { StatusBar } from "expo-status-bar";
 //ES Module Import
 import beachImage from "@/assets/meditation-images/beach.webp";
 import { LinearGradient } from "expo-linear-gradient";
-import CustomButton from "./components/CustomButton";
+import CustomButton from "../components/CustomButton";
 
 export default function App() {
   const router = useRouter();

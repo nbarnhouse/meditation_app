@@ -10,8 +10,8 @@ import {
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 
-import { MEDITATION_DATA } from "../constants/meditation-data";
-import meditationImages from "../constants/meditation-images";
+import { MEDITATION_DATA } from "../../constants/meditation-data";
+import meditationImages from "../../constants/meditation-images";
 import { useRouter } from "expo-router";
 
 export default function MeditationOptionScreen() {
