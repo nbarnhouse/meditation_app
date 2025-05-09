@@ -4,7 +4,7 @@ import React from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
 //import { useAudioPlayer } from "expo-audio";
 
-import CustomButton from "../components/CustomButton";
+import CustomButton from "@/components/CustomButton";
 //const audioSource = require("../../assets/audio/beach.mp3");
 const title10 = "10 seconds";
 
