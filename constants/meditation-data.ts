@@ -1,8 +1,11 @@
+import { AudioFileName } from "./meditation-audio";
+import { ImageFileName } from "./meditation-images";
+
 export interface MeditationType {
   id: number;
   title: string;
-  image: string;
-  audio: string;
+  image: ImageFileName;
+  audio: AudioFileName;
 }
 
 export const MEDITATION_DATA: MeditationType[] = [
@@ -43,12 +46,3 @@ export const MEDITATION_DATA: MeditationType[] = [
     audio: "waterfall.mp3",
   },
 ];
-
-export const AUDIO_FILES: { [key: string]: any } = {
-  "trees.mp3": require("@/assets/audio/trees.mp3"),
-  "river.mp3": require("@/assets/audio/river.mp3"),
-  "meditate-under-tree.mp3": require("@/assets/audio/meditate-under-tree.mp3"),
-  "beach.mp3": require("@/assets/audio/beach.mp3"),
-  "yosemite-stars.mp3": require("@/assets/audio/yosemite-stars.mp3"),
-  "waterfall.mp3": require("@/assets/audio/waterfall.mp3"),
-};

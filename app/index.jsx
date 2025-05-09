@@ -25,19 +25,18 @@ export default function App() {
         colors={["rgba(0,0,0,0.4)", "rgba(0,0,0,0.8)", "transparent"]}
         style={styles.gradient}
       >
-        <SafeAreaView style={{ flex: 1 }}>
-          <View style={styles.container}>
-            <View style={styles.header}>
-              <Text style={styles.title}>Simple Meditation App</Text>
-              <Text style={styles.subtitle}>
-                Simplifying Meditation for Everyone
-              </Text>
-            </View>
-            <CustomButton
-              title="Get Started"
-              onPress={() => router.push("/meditationOptionScreen")}
-            />
+        <SafeAreaView style={styles.container}>
+          <View style={styles.header}>
+            <Text style={styles.title}>Simple Meditation App</Text>
+            <Text style={styles.subtitle}>
+              Simplifying Meditation for Everyone
+            </Text>
           </View>
+          <CustomButton
+            title="Get Started"
+            onPress={() => router.push("/meditationOptionScreen")}
+          />
+
           <StatusBar style="light" />
         </SafeAreaView>
       </LinearGradient>
