@@ -1,10 +1,10 @@
 import { AudioFileName } from "./meditation-audio";
-import { ImageFileName } from "./meditation-images";
+import { ImageFileNameMeditation } from "./meditation-images";
 
 export interface MeditationType {
   id: number;
   title: string;
-  image: ImageFileName;
+  image: ImageFileNameMeditation;
   audio: AudioFileName;
 }
 

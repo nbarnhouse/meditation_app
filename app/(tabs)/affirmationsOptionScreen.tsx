@@ -6,11 +6,12 @@ import {
   SafeAreaView,
   StyleSheet,
   ImageBackground,
+  FlatList,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
-import AFFIRMATION_DATA from "../../constants/affirmation-data";
-import affirmationImages from "@/constants/affirmation-images";
+import AffirmationList from "@/components/AffirmationGallery";
+import { AFFIRMATION_GALLERY } from "@/constants/affirmation-data";
 
 export default function AffirmationsOptionScreen() {
   return (
@@ -24,30 +25,7 @@ export default function AffirmationsOptionScreen() {
             <Text style={styles.subtitle}>
               Change your beliefs with affirmations.
             </Text>
-            <SectionList
-              sections={AFFIRMATION_DATA}
-              keyExtractor={(item) => item.id.toString()}
-              renderItem={({ item }) => (
-                <Pressable
-                  style={styles.flatlist_item}
-                  onPress={() => router.push("/affirmationDetailScreen")} // Navigate to affirmation detail screen
-                >
-                  <ImageBackground
-                    source={item.image} // Using the image from each item
-                    resizeMode="cover"
-                    style={styles.flatlist_images}
-                  >
-                    <Text style={styles.affirmationText}>{item.text}</Text>
-                  </ImageBackground>
-                </Pressable>
-              )}
-              renderSectionHeader={({ section }) => (
-                <View style={styles.sectionHeader}>
-                  <Text style={styles.sectionTitle}>{section.title}</Text>
-                </View>
-              )}
-              showsVerticalScrollIndicator={false}
-            />
+            <AffirmationList sections={AFFIRMATION_GALLERY} />
           </View>
         </SafeAreaView>
       </LinearGradient>
@@ -76,5 +54,32 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
     marginBottom: 25,
+  },
+  flatlist_item: {
+    marginBottom: 10,
+    borderRadius: 10,
+    overflow: "hidden",
+  },
+  flatlist_images: {
+    height: 150,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
+  },
+  affirmationText: {
+    color: "white",
+    fontSize: 18,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginHorizontal: 10,
+  },
+  sectionHeader: {
+    backgroundColor: "#f4f4f4",
+    padding: 10,
+  },
+  sectionTitle: {
+    fontSize: 22,
+    fontWeight: "bold",
+    color: "#333",
   },
 });

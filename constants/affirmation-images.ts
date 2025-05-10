@@ -33,33 +33,63 @@ import tuscannyTwo from "@/assets/affirmation-images/Tuscanny-2.webp";
 import tuscannyThree from "@/assets/affirmation-images/Tuscanny-3.webp";
 import tuscannyFour from "@/assets/affirmation-images/Tuscanny-4.webp";
 
-export default {
-  californiaBackyardOne,
-  californiaBackyardTwo,
-  californiaBackyardThree,
-  californiaBackyardFour,
-  englishCountrysideOne,
-  englishCountrysideTwo,
-  englishCountrysideThree,
-  englishCountrysideFour,
-  mountainMeditateOne,
-  mountainMeditateTwo,
-  mountainMeditateThree,
-  mountainMeditateFour,
-  nightSkyOne,
-  nightSkyTwo,
-  nightSkyThree,
-  nightSkyFour,
-  oregonOne,
-  oregonTwo,
-  oregonThree,
-  oregonFour,
-  relaxingRiverOne,
-  relaxingRiverTwo,
-  relaxingRiverThree,
-  relaxingRiverFour,
-  tuscannyOne,
-  tuscannyTwo,
-  tuscannyThree,
-  tuscannyFour,
+export type ImageFileNameAffirmation =
+  | "California-backyard-1.webp"
+  | "California-backyard-2.webp"
+  | "California-backyard-3.webp"
+  | "California-backyard-4.webp"
+  | "english-countryside-1.webp"
+  | "english-countryside-2.webp"
+  | "english-countryside-3.webp"
+  | "english-countryside-4.webp"
+  | "mountain-meditate-1.webp"
+  | "mountain-meditate-2.webp"
+  | "mountain-meditate-3.webp"
+  | "mountain-meditate-4.webp"
+  | "night-sky-1.webp"
+  | "night-sky-2.webp"
+  | "night-sky-3.webp"
+  | "night-sky-4.webp"
+  | "oregon-1.webp"
+  | "oregon-2.webp"
+  | "oregon-3.webp"
+  | "oregon-4.webp"
+  | "relaxing-river-1.webp"
+  | "relaxing-river-2.webp"
+  | "relaxing-river-3.webp"
+  | "relaxing-river-4.webp"
+  | "Tuscanny-1.webp"
+  | "Tuscanny-2.webp"
+  | "Tuscanny-3.webp"
+  | "Tuscanny-4.webp";
+
+export const IMAGE_FILES_AFFIRMATION: Record<ImageFileNameAffirmation, any> = {
+  "California-backyard-1.webp": californiaBackyardOne,
+  "California-backyard-2.webp": californiaBackyardTwo,
+  "California-backyard-3.webp": californiaBackyardThree,
+  "California-backyard-4.webp": californiaBackyardFour,
+  "english-countryside-1.webp": englishCountrysideOne,
+  "english-countryside-2.webp": englishCountrysideTwo,
+  "english-countryside-3.webp": englishCountrysideThree,
+  "english-countryside-4.webp": englishCountrysideFour,
+  "mountain-meditate-1.webp": mountainMeditateOne,
+  "mountain-meditate-2.webp": mountainMeditateTwo,
+  "mountain-meditate-3.webp": mountainMeditateThree,
+  "mountain-meditate-4.webp": mountainMeditateFour,
+  "night-sky-1.webp": nightSkyOne,
+  "night-sky-2.webp": nightSkyTwo,
+  "night-sky-3.webp": nightSkyThree,
+  "night-sky-4.webp": nightSkyFour,
+  "oregon-1.webp": oregonOne,
+  "oregon-2.webp": oregonTwo,
+  "oregon-3.webp": oregonThree,
+  "oregon-4.webp": oregonFour,
+  "relaxing-river-1.webp": relaxingRiverOne,
+  "relaxing-river-2.webp": relaxingRiverTwo,
+  "relaxing-river-3.webp": relaxingRiverThree,
+  "relaxing-river-4.webp": relaxingRiverFour,
+  "Tuscanny-1.webp": tuscannyOne,
+  "Tuscanny-2.webp": tuscannyTwo,
+  "Tuscanny-3.webp": tuscannyThree,
+  "Tuscanny-4.webp": tuscannyFour,
 };

@@ -12,7 +12,7 @@ import { StatusBar } from "expo-status-bar";
 import { LinearGradient } from "expo-linear-gradient";
 
 import { MEDITATION_DATA } from "../../constants/meditation-data";
-import { IMAGE_FILES } from "@/constants/meditation-images";
+import { IMAGE_FILES_MEDITATION } from "@/constants/meditation-images";
 import { useRouter } from "expo-router";
 
 export default function MeditationOptionScreen() {
@@ -42,7 +42,7 @@ export default function MeditationOptionScreen() {
                 onPress={() => router.push("/meditationTimeScreen")}
               >
                 <ImageBackground
-                  source={IMAGE_FILES[item.image]}
+                  source={IMAGE_FILES_MEDITATION[item.image]}
                   resizeMode="cover"
                   style={styles.flatlist_images}
                 >
